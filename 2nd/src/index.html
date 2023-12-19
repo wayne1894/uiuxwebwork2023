@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" href="/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>webstart template (vite5 + tailwind3 + scss + ejs)</title>
+    <script src="https://cdn.tailwindcss.com"></script><!-- tailwind cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" /><!-- uikit cdn -->
+    <link rel="stylesheet" href="scss/main.scss">
+</head>
+<body class="  bg-gray-600">
+  <%-include("include/main_1.ejs")%>
+  <%-include("include/tab_bar.ejs")%>
+  <%-include("include/totopbutton.ejs")%>
+
+  <main>
+    <%-include("include/main_2_1.ejs")%>
+    <%-include("include/main_2_2.ejs")%>
+    <%-include("include/main_3.ejs")%>
+    <%-include("include/main_4.ejs")%>
+    <%-include("include/main_5.ejs")%>
+    <%-include("include/main_6.ejs")%>
+    <%-include("include/main_7.ejs")%>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script><!-- uikit導入連結 -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+  </main>
+</body>
+<footer >
+  <%-include("include/main_8_footer.ejs")%>
+</footer>
+</html>

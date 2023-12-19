@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {}
+
+.uk-link-toggle:hover .uk-link,
+.uk-link:hover,
+a:hover {
+    text-decoration: none;
+}
+
+.zoom{
+    overflow: hidden;
+    position: relative;
+    .inner{
+      transition: transform .42s cubic-bezier(.15,.46,.57,1);
+      &::before {
+        content: "";
+        transition: opacity .42s cubic-bezier(.15,.46,.57,1);
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255,255,255,0.25);
+      }
+    }
+    &:hover .inner{
+      transform: scale(1.08, 1.08);
+      &::before{
+        opacity: 1;
+      }
+    }
+  }
+
+.card{
+    width: 480px;
+    height: 450px;
+    background-color: #fff;
+    border: 2px solid #9A3412;
+    border-radius: 25px;
+    font-weight: bold;
+    flex: content;
+    flex-direction: column;
+    align-items: center;
+}
+.card_text{
+    color: #000;
+    text-align: left;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.information{
+    color:#BB895D ;
+    font-size: 32px;
+    margin-right: 25px;
+}
+
+.location{
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.banner_btn {
+    padding: 14px 120px;
+    background-color: white;
+    border-radius: 50px;
+    border: 2px solid #9A3412;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #9A3412;
+    position: relative;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: #9A3412;
+        color: white;
+    }
+
+    &::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 18px;
+        right: 70px;
+        background-image: url(../img/icon_redbean.png);
+        background-size: cover;
+        transition: 0.5s;
+    }
+
+    &:hover::after {
+        right: 55px;
+        background-image: url(../img/icon_whitebean.png);
+
+    }
+}
+
+.arrow{
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+}

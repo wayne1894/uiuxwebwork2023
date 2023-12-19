@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" href="/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>webstart template (vite5 + tailwind3 + scss + ejs)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="scss/main.scss">
+</head>
+<header>
+  <div class="bg-white flex justify-center items-center px-[160px] py-[35px] max-md:px-5">
+  <div class="flex flex-wrap w-full max-w-[1920px] items-stretch justify-between gap-5">
+    <a class="flex items-center gap-[15px]" href="#">
+      <img class="h-[70px]" src="image/新LOGO_彩色.png" alt="">
+    </a>
+    <div class="flex justify-center gap-[67px] my-auto max-md:max-w-full max-md:flex-wrap max-md:justify-center">
+      <a class="text-stone-700 text-center text-[22px] font-semibold my-auto hover:text-[#9A3412]" href="#">
+        最新消息
+      </a>
+      <a class="text-stone-700 text-center text-[22px] font-semibold my-auto hover:text-[#9A3412]" href="#">
+        尋找店家
+      </a>
+      <a class="text-stone-700 text-center text-[22px] font-semibold my-auto hover:text-[#9A3412]" href="#">
+        會員中心
+      </a>
+      <a class="text-stone-700 text-center text-[22px] font-semibold my-auto hover:text-[#9A3412]" href="#">
+        常見問題
+      </a>
+      <a class="text-white text-center text-[26px] font-semibold bg-[#9A3412] justify-center items-center rounded-[54px] px-[67px] py-[18px] 
+      hover:bg-[#FCA152] hover:text-[#9A3412]" href="">
+        登入/註冊
+      </a>
+    </div>
+  </div>
+  </div>
+</header>
+<body>
+  <div class="bg-[#FFFAF5] h-full">
+    <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <%for(var i=0;i<4;i++){%>
+        <div>
+          <div class="bg-[#FFDE25] text-[#000] text-[20px] font-bold py-2 rounded-t-2xl">美甲美妝業</div>
+            <div style="aspect-ratio: 16 / 9;" class="zoom relative">
+              <a class="inner w-full h-full block" href="">
+                <img class="w-full h-full object-cover" src="image/共生咖啡廳.JPG" alt="">
+              </a>
+              <a href="#" class="bg-[green] text-white absolute top-0 left-0">募資優惠</a>
+            </div>
+              <div class="bg-white p-5">
+                <a href="#">no15class.com</a>
+                <p>與藍猴平台的溝通非常順暢，使用前清楚講解說明，使用後遇到問題快速協助，後台操作直觀容易理解，也持續擴增新功能，值得推薦!!</p>
+                <div class="flex items-center gap-3">
+                <img class="w-[40px] rounded-full" src="image/thead12.png" alt="">
+                <span>十五號藝術事業</span>
+            </div>
+          </div>
+        </div>
+      <%}%>
+    </div> -->
+    <!-- <div class="card">
+
+      <div class=" w-full gap-5 p-5">
+          <img class="w-full h-[250px] rounded-[25px]" src="image/共生咖啡廳.JPG" alt="">
+      <div class="mt-[27px]"><p class="card_text">共生咖啡廳</p></div>
+      </div>
+
+      <div class="relative items-end mb-[39px]">
+          <div class="flex flex-row ml-[30px]">
+              <p class="information ">4.8</p>
+              <img class="w-10 h-10" src="image/ICON_淺色咖啡豆.png" alt="">
+          </div>
+          <div class="flex flex-row justify-center items-center absolute right-0 bottom-0 ">
+              <img class="w-5 h-3 mr-[20px]" src="image/ICON.png" alt="">
+              <p class="information">店家資訊</p>
+          </div>
+      </div>
+      <div class="uk-position-center uk-panel"></div>
+  </div> -->
+    <!-- <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+        <li>
+            <div class="uk-panel">
+                <img src="image/共生咖啡廳.JPG" width="400" height="600" alt="">
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+        </li>
+        <li>
+            <div class="uk-panel">
+                <img src="image/共生咖啡廳.JPG" width="400" height="600" alt="">
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+        </li>
+        <li>
+          <div class="uk-panel">
+              <img src="image/共生咖啡廳.JPG" width="400" height="600" alt="">
+              <div class="uk-position-center uk-panel"></div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-panel">
+              <img src="image/共生咖啡廳.JPG" width="400" height="600" alt="">
+              <div class="uk-position-center uk-panel"></div>
+          </div>
+        </li>
+        
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+
+</div> -->
+  <!-- BANNER -->
+<div id="BANNER1" class="max-w-[1600px] h-[700px]  mx-auto relative hidden lg:block "><img class="rounded-[40px]" src="image/BANNER.jpg" alt="">
+  <div class="absolute lg:top-[8%] left-[10%] 2xl:top-[20%]  ">
+    <div>
+      <h2 class="text-[#9A3412] font-bold text-[30px] lg:text-[70px]">
+        讓咖啡駱駝<br>帶你尋找理想店家!
+      </h2>
+    </div>
+    <div class="mt-12">
+      <a class="banner_btn" href="#" >LET’S GO</a>
+    </div>
+  </div>
+</div>
+
+
+<div id="BANNER2" class=" relative  justify-center lg:hidden text-center "><img src="img/BANNER2.jpg" alt="">
+  <div class="absolute top-[100px]">
+    <div>
+      <h2 class="text-[#9A3412] font-bold text-[80px] lg:text-[70px] ">
+        讓咖啡駱駝<br>帶你尋找理想店家!
+      </h2>
+    </div>
+    <div class="mt-12">
+      <a class="banner_btn" href="#" >LET’S GO</a>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+<!-- ray -->
+<div class="bg-[#FFFAF5] pt-64 pb-40">
+  <div class="bg-[#BB895D] flex relative justify-center mx-auto max-w-[1700px] h-[800px] text-center rounded-[42px] pt-[120px]">
+    
+    <div class="absolute top-[-50px] left-[-40px] border-orange-800 text-center bg-white z-[1] w-[560px] h-[120px] px-20 py-6 rounded-[34px] border-[5px] border-solid max-md:px-5">
+      <span class="text-orange-800  text-6xl font-bold">最新消息</span>
+      <span class="text-orange-800  text-5xl px-[10px]">News</span> 
+    </div>
+  <div class="absolute top-[30px] right-[50px]">
+
+    <a href="#">
+      <div class="flex flex-row justify-center items-center">
+        <img class="arrow" src="image/ICON.png" alt="">
+        <p class="text-white text-center text-3xl">最新消息一覽</p>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="px-[35px] uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">
+      <%for(var i=0;i<15;i++){%>
+        <li>
+          <div class="flex justify-center bg-white  rounded-[30px]">
+          
+            <div class="bg-white flex grow flex-col w-full px-4 py-11 rounded-[30px] max-md:max-w-full max-md:mt-10">
+            <img class="max-w-[380px] h-[280px] pl-2" src="img/deodorant-bags-made-of-coffee-grounds-background-have-christmas-feeling-802888295 2.png" alt="">
+            <div class="text-[#CA9E78] text-2xl whitespace-nowrap ml-5 mt-8 self-start max-md:ml-2.5">
+              2023.11.05
+            </div>
+            <div class="text-black text-4xl self-stretch mt-8 max-md:max-w-full">
+              【 店家新增公告 】
+            </div>
+            
+            <div class="text-neutral-500 text-xl whitespace-nowrap mr-5 mt-10 mb-3 self-start max-md:ml-2.5">
+              快來看看有哪些店家登陸咖啡駱駝吧!
+            </div>
+          </div>
+        </div>
+        </li>
+        <%}%>
+    </ul>
+
+    <a class="bg-[#9A3412] rounded-full text-[#fff] uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="bg-[#9A3412] rounded-full text-[#fff] uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+</div>
+</div>
+</div>
+<!-- XUN -->
+<div class="bg-[#FFFAF5]">
+  <div class="mx-auto max-w-fullr">
+      <div class="text-center">
+          <h2 class="py-10 text-[25px] lg:text-[60px] text-[#9A3412] font-bold">精選店家</h2>
+          <h2 class="py-10 text-[20px] lg:text-[50px] text-[#9A3412] font-medium">COLLECTIONS</h2>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-20 justify-items-center">
+      <%for(var i=0;i<3;i++){%>
+          <div class="card">
+
+              <div class=" w-full gap-5 p-5">
+                  <img class="w-full h-[250px] rounded-[25px]" src="image/共生咖啡廳.JPG" alt="">
+              <div class="mt-[27px]"><p class="card_text">共生咖啡廳</p></div>
+              </div>
+
+              <div class="flex flex-row justify-between mb-[39px]">
+                  <div class="flex flex-row ml-[30px]">
+                      <p class="information ">4.8</p>
+                      <img class="w-10 h-10" src="image/ICON_淺色咖啡豆.png" alt="">
+                  </div>
+                  <div class="flex flex-row justify-center items-center ">
+                      <img class="w-5 h-3 mr-[20px]" src="img/ICON.png" alt="">
+                      <p class="information">店家資訊</p>
+                  </div>
+              </div>
+              <div>
+                  <p class="location">高雄市</p>
+                  <img class="w-[180px] h-[85px] relative" src="img/ICON_縣市底圖.png" alt="">
+              </div>
+          </div>
+          <div class="card" class="flex flex-col"></div>
+          <div class="card" class="flex flex-col"></div>
+      <%}%>
+      </div>
+  </div>
+</div>
+
+  <footer>
+    <div class="flex flex-wrap justify-center h-[400px] bg-[#BB895D] py-[85px] gap-[450px]">
+      <div class="flex-col">
+        <a class="" href="">
+          <img class="h-[94px] mb-[105px]" src="image/新LOGO_白色(深底用).png" alt="">
+        </a>
+          <ul class="text-white text-[25px] mx-10">© 2023  咖啡駱駝 Cafaafe</ul>
+      </div>
+      <div class="flex flex-wrap gap-[130px] text-white">
+       <div>
+        <ul class="text-[35px] font-semibold">會員中心
+          <li class="text-[25px] font-normal">加入會員</li>
+          <li class="text-[25px] font-normal">個人檔案</li>
+          <li class="text-[25px] font-normal">咖啡好友</li>
+          <li class="text-[25px] font-normal">收藏名單</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="text-[35px] font-semibold">Q&A
+          <li class="text-[25px] font-normal">註冊流程</li>
+          <li class="text-[25px] font-normal">網站操作</li>
+          <li class="text-[25px] font-normal">優惠活動</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="text-[35px] font-semibold">關於我們
+          <li class="text-[25px] font-normal">組織理念</li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="flex-col">
+        <a class="" href="#">
+          <img class="w-[50px] mb-[20px]" src="image/ICON_FB.png" alt="">
+        </a>
+        <a class="" href="#">
+         <img class="w-[50px]" src="image/ICON_LINE.png" alt="">
+        </a>
+      </div>
+    </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+</body>
+
+  
+</html>
